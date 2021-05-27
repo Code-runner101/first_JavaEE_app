@@ -20,7 +20,7 @@ public class FirstServlet extends HttpServlet {
         logger.info("New GET request");
 
         resp.getWriter().printf("<h1>List of products = %s </h1>",
-                req.getParameter(String.valueOf(String.valueOf(product.products).split("\\s"))));
+                req.getParameter(String.valueOf(product.products)));
 
 
 //        req.setAttribute("newAttr", "attrValue");
